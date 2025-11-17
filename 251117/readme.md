@@ -57,6 +57,7 @@
 print("Hello Python")
 print("2+3=", 2+3)
 print("Hello" * 10)   # 문자열 반복
+```python
 
 🐢 7. 터틀 그래픽(Turtle)
 import turtle
