@@ -58,7 +58,7 @@ print("Hello Python")
 print("2+3=", 2+3)
 print("Hello" * 10)   # 문자열 반복
 
-## 🐢 7. 터틀 그래픽(Turtle)
+🐢 7. 터틀 그래픽(Turtle)
 import turtle
 t = turtle.Turtle()
 t.shape("turtle")
@@ -71,7 +71,7 @@ turtle.mainloop()
 
 교육용 시각 실습에 적합
 
-## 🧪 8. 실습 예제 리스트
+🧪 8. 실습 예제 리스트
 
 print() 함수로 문장 출력하기
 
@@ -83,7 +83,7 @@ print() 함수로 문장 출력하기
 
 터틀 그래픽으로 삼각형 그리기
 
-## 📌 핵심 정리
+📌 핵심 정리
 개념	내용
 프로그램	컴퓨터가 수행할 명령어 집합
 프로그래밍 언어	컴퓨터가 이해하는 언어
