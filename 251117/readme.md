@@ -93,6 +93,7 @@ print() 함수로 문장 출력하기
 print()	출력 함수
 스크립트 모드	파일(.py) 실행 방식
 
+
 # 📘 IoT Python Programming – Chapter 2 Summary  
 **주제: 변수와 수식 기본 개념 정리**
 
@@ -235,3 +236,138 @@ print("500원:", change//500)
 문자열 기사 생성	input + 출력
 BMI 계산	실수 입력 & 연산
 자판기 거스름돈	//, % 활용
+
+
+# 📘 IoT Python Programming – Chapter 3 Summary  
+**주제: 조건문 (if, elif, else)**  
+**출처:** 제3장 조건문(강의).pdf  
+:contentReference[oaicite:0]{index=0}
+
+---
+
+## 🎯 학습 목표
+
+- 제어문의 개념 이해
+- `if`, `elif`, `else` 구조 사용
+- 관계·논리 연산자 활용
+- 블록(들여쓰기) 개념 이해
+- 중첩 조건문 & 연속 조건문 작성
+
+---
+
+## 🧭 1. 제어문(Control Structure)
+
+### ✔ 프로그램 실행 흐름을 바꾸는 구조
+
+| 종류 | 설명 |
+|------|------|
+| 순차 구조 | 위 → 아래로 실행 |
+| **조건문** | 조건에 따라 실행 경로 변화 |
+| 반복문 | 특정 문장을 반복 실행 |
+
+조건문이 없다면 프로그램은 항상 동일한 결과만 수행하게 됨
+
+---
+
+## 🧩 2. if-else 기본 구조
+
+```python
+if 조건식:
+    실행문1
+else:
+    실행문2
+
+🔎 3. 관계 연산자
+연산자	의미
+==	같다
+!=	같지 않다
+>, <	비교
+>=, <=	이상 / 이하
+
+✔ 결과는 항상 True / False (부울값)
+
+🧠 논리 연산자
+연산자	의미
+and	모두 참
+or	하나만 참
+not	반대로
+
+📌 not (A and B) 🔁 (not A) or (not B)
+→ 드모르간 법칙
+
+🔀 4. 조건 연산자 (삼항 연산자)
+result = (값1 if 조건 else 값2)
+
+
+예시:
+
+shipping_cost = (0 if price > 20000 else 3000)
+
+🏷 5. 문자열 / 실수 비교
+
+✔ 문자열은 사전 순 비교 가능
+✔ 실수 비교 시 == 직접 비교 ❌
+➡ abs(a-b) < 작은값 형태 권장
+
+🧱 6. 중첩 if 문
+if country == "korea":
+    if price >= 20000:
+        cost = 0
+    else:
+        cost = 3000
+else:
+    if price >= 100000:
+        cost = 0
+    else:
+        cost = 8000
+
+🔁 7. 연속 if-elif-else
+if score >= 90:
+    print("A")
+elif score >= 80:
+    print("B")
+elif score >= 70:
+    print("C")
+else:
+    print("F")
+
+🧪 대표 Lab 실습 목록
+Lab	개념 활용
+산술 퀴즈	==, 랜덤
+짝수/홀수	%
+세일 가격 계산	조건 연산자
+물의 상태 출력	elif
+동전던지기	랜덤 + if
+리히터 규모 판별	연속 if
+메뉴 선택 검증	논리 연산
+축구 게임	사용자 입력 + 랜덤
+8 매직볼	난수 + 조건문
+올바른 삼각형	세 조건 AND
+터틀 도형 그리기	조건문 + 그래픽
+🧩 예제 코드 모음
+✔ 짝수 / 홀수 판별
+n = int(input("정수를 입력하시오: "))
+print("짝수" if n % 2 == 0 else "홀수")
+
+✔ 리히터 규모 예제
+scale = float(input("리히터 규모: "))
+if scale >= 8: print("대부분의 구조물 파괴")
+elif scale >= 7: print("지표면 균열")
+elif scale >= 4: print("빈약한 건물 피해")
+elif scale >= 2: print("물건 흔들림")
+else: print("기계만 탐지 가능")
+
+📌 핵심 정리
+
+제어문 = 조건문 + 반복문
+
+if-elif-else 구조를 들여쓰기로 표현
+
+조건문 내부에서 변수·수식·부울 변수 사용 가능
+
+논리 연산으로 복합 조건 설정 (and,or)
+
+실수 비교는 abs 사용
+
+조건문은 중첩 가능하며 구조화가 매우 중요함
+
