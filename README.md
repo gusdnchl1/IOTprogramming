@@ -50,3 +50,6 @@
 │   ├── main.py               # 최종 미니 프로젝트 진입 파일
 │   └── docs/                 # 설계 문서, 아이디어 정리
 └── README.md                 # (이 파일)
+
+글꼴
+https://github.com/naver/d2codingfont
