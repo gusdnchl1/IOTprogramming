@@ -26,6 +26,9 @@
 
 ---
 
+## 글꼴
+https://github.com/naver/d2codingfont
+
 ## 📁 레포지토리 구조 (Repository Structure)
 
 > 예시이며, 수업 주차/내용에 맞게 변경하시면 됩니다.
@@ -50,6 +53,3 @@
 │   ├── main.py               # 최종 미니 프로젝트 진입 파일
 │   └── docs/                 # 설계 문서, 아이디어 정리
 └── README.md                 # (이 파일)
-
-글꼴
-https://github.com/naver/d2codingfont
